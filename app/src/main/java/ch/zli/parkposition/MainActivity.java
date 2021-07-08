@@ -5,6 +5,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 
 import android.Manifest;
 import android.content.Intent;
@@ -38,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
     Button button_position;
     Button button_reset;
     ImageView imageView;
-    SupportMapFragment supportMapFragment;
-    FusedLocationProviderClient client;
+
+
 
 
     @Override
@@ -52,19 +54,13 @@ public class MainActivity extends AppCompatActivity {
         button_reset = (Button) findViewById(R.id.button_reset);
         imageView = (ImageView) findViewById(R.id.imageView_foto);
 
+        Fragment fragment = new MapFragment();
 
-        supportMapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.google_map);
 
-        client = LocationServices.getFusedLocationProviderClient(this);
-
-        if (ActivityCompat.checkSelfPermission(MainActivity.this,
-                Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-            getCurrentLocation();
-        } else {
-            ActivityCompat.requestPermissions(MainActivity.this,
-                    new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 44);
-        }
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.frame_layout_mapView,fragment)
+                .commit();
 
 
         button_foto.setOnClickListener(new View.OnClickListener() {
@@ -89,35 +85,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void getCurrentLocation() {
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-            return;
-        }
-        Task<Location> task = client.getLastLocation();
-        task.addOnSuccessListener(new OnSuccessListener<Location>() {
-            @Override
-            public void onSuccess(Location location) {
-                if(location != null){
-                    supportMapFragment.getMapAsync(new OnMapReadyCallback() {
-                        @Override
-                        public void onMapReady(@NonNull @NotNull GoogleMap googleMap) {
-                            LatLng latLng = new LatLng(location.getLatitude(),location.getLongitude());
-                            MarkerOptions options = new MarkerOptions().position(latLng)
-                                                    .title("I'm there");
-                            googleMap.addMarker(options);
-                        }
-                    });
-                }
-            }
-        });
-    }
 
 
 
