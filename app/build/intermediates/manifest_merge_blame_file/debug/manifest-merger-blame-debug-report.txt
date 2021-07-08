@@ -1,0 +1,146 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="ch.zli.parkposition"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="27"
+8-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml
+10
+11    <!--
+12         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+13         Google Maps Android API v2, but you must specify either coarse or fine
+14         location permissions for the "MyLocation" functionality.
+15    -->
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:10:5-79
+16-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:10:22-76
+17    <uses-permission android:name="android.permission.CAMERA" />
+17-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:12:5-65
+17-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:12:22-62
+18
+19    <uses-feature
+19-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:13:5-84
+20        android:name="android.hardware.camera"
+20-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:13:19-57
+21        android:required="true" />
+21-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:13:58-81
+22
+23    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+23-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:14:5-81
+23-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:14:22-78
+24    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+24-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:10:5-79
+24-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:10:22-76
+25    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+25-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:18:5-80
+25-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:18:22-78
+26    <uses-permission android:name="android.permission.INTERNET" />
+26-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:19:5-66
+26-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:19:22-64
+27
+28    <!-- Include required permissions for Google Maps API to run. -->
+29    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+29-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\nirsur\.gradle\caches\transforms-2\files-2.1\740ec093eda080f27ba7e2d830b6c0c7\play-services-maps-17.0.1\AndroidManifest.xml:23:5-79
+29-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\nirsur\.gradle\caches\transforms-2\files-2.1\740ec093eda080f27ba7e2d830b6c0c7\play-services-maps-17.0.1\AndroidManifest.xml:23:22-76
+30
+31    <uses-feature
+31-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\nirsur\.gradle\caches\transforms-2\files-2.1\740ec093eda080f27ba7e2d830b6c0c7\play-services-maps-17.0.1\AndroidManifest.xml:26:5-28:35
+32        android:glEsVersion="0x00020000"
+32-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\nirsur\.gradle\caches\transforms-2\files-2.1\740ec093eda080f27ba7e2d830b6c0c7\play-services-maps-17.0.1\AndroidManifest.xml:27:9-41
+33        android:required="true" />
+33-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\nirsur\.gradle\caches\transforms-2\files-2.1\740ec093eda080f27ba7e2d830b6c0c7\play-services-maps-17.0.1\AndroidManifest.xml:28:9-32
+34
+35    <queries>
+35-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\nirsur\.gradle\caches\transforms-2\files-2.1\740ec093eda080f27ba7e2d830b6c0c7\play-services-maps-17.0.1\AndroidManifest.xml:30:5-34:15
+36
+37        <!-- Needs to be explicitly declared on Android R+ -->
+38        <package android:name="com.google.android.apps.maps" />
+38-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\nirsur\.gradle\caches\transforms-2\files-2.1\740ec093eda080f27ba7e2d830b6c0c7\play-services-maps-17.0.1\AndroidManifest.xml:33:9-64
+38-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\nirsur\.gradle\caches\transforms-2\files-2.1\740ec093eda080f27ba7e2d830b6c0c7\play-services-maps-17.0.1\AndroidManifest.xml:33:18-61
+39    </queries>
+40
+41    <application
+41-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:22:5-52:19
+42        android:allowBackup="true"
+42-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:23:9-35
+43        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+43-->[androidx.core:core:1.5.0] C:\Users\nirsur\.gradle\caches\transforms-2\files-2.1\cc5e9dcdc56dc39042f72c501235e83f\core-1.5.0\AndroidManifest.xml:24:18-86
+44        android:debuggable="true"
+45        android:extractNativeLibs="false"
+46        android:icon="@mipmap/ic_launcher"
+46-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:24:9-43
+47        android:label="@string/app_name"
+47-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:25:9-41
+48        android:roundIcon="@mipmap/ic_launcher_round"
+48-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:26:9-54
+49        android:supportsRtl="true"
+49-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:27:9-35
+50        android:testOnly="true"
+51        android:theme="@style/Theme.Parkposition" >
+51-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:28:9-50
+52
+53        <!--
+54             The API key for Google Maps-based APIs is defined as a string resource.
+55             (See the file "res/values/google_maps_api.xml").
+56             Note that the API key is linked to the encryption key used to sign the APK.
+57             You need a different API key for each encryption key, including the release key that is used to
+58             sign the APK for publishing.
+59             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+60        -->
+61        <meta-data
+61-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:38:9-40:55
+62            android:name="com.google.android.geo.API_KEY"
+62-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:39:13-58
+63            android:value="@string/google_maps_key" />
+63-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:40:13-52
+64
+65        <activity
+65-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:42:9-44:68
+66            android:name="ch.zli.parkposition.MapsActivity"
+66-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:43:13-41
+67            android:label="@string/title_activity_maps" />
+67-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:44:13-56
+68        <activity android:name="ch.zli.parkposition.MainActivity" >
+68-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:45:9-51:20
+68-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:45:19-47
+69            <intent-filter>
+69-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:46:13-50:29
+70                <action android:name="android.intent.action.MAIN" />
+70-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:47:17-69
+70-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:47:25-66
+71
+72                <category android:name="android.intent.category.LAUNCHER" />
+72-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:49:17-77
+72-->C:\Users\nirsur\AndroidStudioProjects\Parkposition\app\src\main\AndroidManifest.xml:49:27-74
+73            </intent-filter>
+74        </activity>
+75        <!-- Needs to be explicitly declared on P+ -->
+76        <uses-library
+76-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\nirsur\.gradle\caches\transforms-2\files-2.1\740ec093eda080f27ba7e2d830b6c0c7\play-services-maps-17.0.1\AndroidManifest.xml:39:9-41:40
+77            android:name="org.apache.http.legacy"
+77-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\nirsur\.gradle\caches\transforms-2\files-2.1\740ec093eda080f27ba7e2d830b6c0c7\play-services-maps-17.0.1\AndroidManifest.xml:40:13-50
+78            android:required="false" />
+78-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\nirsur\.gradle\caches\transforms-2\files-2.1\740ec093eda080f27ba7e2d830b6c0c7\play-services-maps-17.0.1\AndroidManifest.xml:41:13-37
+79
+80        <activity
+80-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\nirsur\.gradle\caches\transforms-2\files-2.1\d713977a4b6e485444fae772ce7a738f\play-services-base-17.5.0\AndroidManifest.xml:23:9-26:75
+81            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+81-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\nirsur\.gradle\caches\transforms-2\files-2.1\d713977a4b6e485444fae772ce7a738f\play-services-base-17.5.0\AndroidManifest.xml:24:13-79
+82            android:exported="false"
+82-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\nirsur\.gradle\caches\transforms-2\files-2.1\d713977a4b6e485444fae772ce7a738f\play-services-base-17.5.0\AndroidManifest.xml:25:13-37
+83            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+83-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\nirsur\.gradle\caches\transforms-2\files-2.1\d713977a4b6e485444fae772ce7a738f\play-services-base-17.5.0\AndroidManifest.xml:26:13-72
+84
+85        <meta-data
+85-->[com.google.android.gms:play-services-basement:17.5.0] C:\Users\nirsur\.gradle\caches\transforms-2\files-2.1\2535a99724a6fdcf185356f902c38a6e\play-services-basement-17.5.0\AndroidManifest.xml:23:9-25:69
+86            android:name="com.google.android.gms.version"
+86-->[com.google.android.gms:play-services-basement:17.5.0] C:\Users\nirsur\.gradle\caches\transforms-2\files-2.1\2535a99724a6fdcf185356f902c38a6e\play-services-basement-17.5.0\AndroidManifest.xml:24:13-58
+87            android:value="@integer/google_play_services_version" />
+87-->[com.google.android.gms:play-services-basement:17.5.0] C:\Users\nirsur\.gradle\caches\transforms-2\files-2.1\2535a99724a6fdcf185356f902c38a6e\play-services-basement-17.5.0\AndroidManifest.xml:25:13-66
+88    </application>
+89
+90</manifest>
