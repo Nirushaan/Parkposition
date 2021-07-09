@@ -1,13 +1,16 @@
 ch/zli/parkposition/databinding/ActivityMainBinding.java
  ch.zli.parkposition.databinding.ActivityMainBinding
-ch/zli/parkposition/MapsActivity.java
- ch.zli.parkposition.MapsActivity
-ch/zli/parkposition/BuildConfig.java
- ch.zli.parkposition.BuildConfig
-ch/zli/parkposition/databinding/ActivityMapsBinding.java
- ch.zli.parkposition.databinding.ActivityMapsBinding
+ch/zli/parkposition/databinding/FragmentMapBinding.java
+ ch.zli.parkposition.databinding.FragmentMapBinding
 ch/zli/parkposition/MainActivity.java
  ch.zli.parkposition.MainActivity
  ch.zli.parkposition.MainActivity$1
  ch.zli.parkposition.MainActivity$2
- ch.zli.parkposition.MainActivity$2$1
+ ch.zli.parkposition.MainActivity$3
+ ch.zli.parkposition.MainActivity$4
+ch/zli/parkposition/MapActivity.java
+ ch.zli.parkposition.MapActivity
+ ch.zli.parkposition.MapActivity$1
+ ch.zli.parkposition.MapActivity$1$1
+ch/zli/parkposition/BuildConfig.java
+ ch.zli.parkposition.BuildConfig

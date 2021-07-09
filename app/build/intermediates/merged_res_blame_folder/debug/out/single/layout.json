@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\nirsur\\AndroidStudioProjects\\Parkposition\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_map.xml",
+        "source": "C:\\Users\\nirsur\\AndroidStudioProjects\\Parkposition\\app\\src\\main\\res\\layout\\fragment_map.xml"
+    },
+    {
         "merged": "C:\\Users\\nirsur\\AndroidStudioProjects\\Parkposition\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_maps.xml",
         "source": "C:\\Users\\nirsur\\AndroidStudioProjects\\Parkposition\\app\\src\\main\\res\\layout\\activity_maps.xml"
     },

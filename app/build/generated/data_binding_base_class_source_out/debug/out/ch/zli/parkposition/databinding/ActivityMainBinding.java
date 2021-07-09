@@ -5,13 +5,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import ch.zli.parkposition.R;
-import com.google.android.gms.maps.MapView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -30,20 +30,20 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Button buttonReset;
 
   @NonNull
-  public final ImageView imageViewFoto;
+  public final FrameLayout frameLayoutMapView;
 
   @NonNull
-  public final MapView mapView;
+  public final ImageView imageViewFoto;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button buttonFoto,
-      @NonNull Button buttonPosition, @NonNull Button buttonReset, @NonNull ImageView imageViewFoto,
-      @NonNull MapView mapView) {
+      @NonNull Button buttonPosition, @NonNull Button buttonReset,
+      @NonNull FrameLayout frameLayoutMapView, @NonNull ImageView imageViewFoto) {
     this.rootView = rootView;
     this.buttonFoto = buttonFoto;
     this.buttonPosition = buttonPosition;
     this.buttonReset = buttonReset;
+    this.frameLayoutMapView = frameLayoutMapView;
     this.imageViewFoto = imageViewFoto;
-    this.mapView = mapView;
   }
 
   @Override
@@ -91,20 +91,20 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.frame_layout_mapView;
+      FrameLayout frameLayoutMapView = rootView.findViewById(id);
+      if (frameLayoutMapView == null) {
+        break missingId;
+      }
+
       id = R.id.imageView_foto;
       ImageView imageViewFoto = rootView.findViewById(id);
       if (imageViewFoto == null) {
         break missingId;
       }
 
-      id = R.id.mapView;
-      MapView mapView = rootView.findViewById(id);
-      if (mapView == null) {
-        break missingId;
-      }
-
       return new ActivityMainBinding((ConstraintLayout) rootView, buttonFoto, buttonPosition,
-          buttonReset, imageViewFoto, mapView);
+          buttonReset, frameLayoutMapView, imageViewFoto);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
