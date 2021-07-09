@@ -7,7 +7,6 @@ ch/zli/parkposition/MainActivity.java
  ch.zli.parkposition.MainActivity$1
  ch.zli.parkposition.MainActivity$2
  ch.zli.parkposition.MainActivity$3
- ch.zli.parkposition.MainActivity$4
 ch/zli/parkposition/MapActivity.java
  ch.zli.parkposition.MapActivity
  ch.zli.parkposition.MapActivity$1
